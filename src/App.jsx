@@ -1,10 +1,15 @@
 //Module Imports 
+import {Routes, Route} from "react-router"
 
 
 
 
 //Component Imports 
 import Navbar from "./components/ui/custom/Navbar.jsx";
+
+
+//Page imports 
+import Home from "./pages/Home.jsx"
 
 
 //Data imports
@@ -26,7 +31,19 @@ export default function App() {
 
 return (
   <>
-    <Navbar links = {navbarLinks}></Navbar>
+    <Navbar links={navbarLinks}></Navbar>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Home
+            mainText="Explore Countless Recipes"
+            subText="sdjsdjfsdhbfsjhdbfsjdhbfjsdhfbsdjhfbsjdhf dfjhsdfjhsdbfjhsdfs fsdf"
+            delimiterImgSrc="./fork.png"
+          ></Home>
+        }
+      ></Route>
+    </Routes>
   </>
 );
   

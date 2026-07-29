@@ -132,3 +132,14 @@
 body{
   background-color: aliceblue;
 }
+
+
+/* // <weight>: Use a value from 300 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+.figtree-font {
+  font-family: "Figtree", sans-serif;
+  
+  font-weight: 900;
+  font-style: normal;
+}

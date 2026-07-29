@@ -10,15 +10,22 @@ export default function Navbar({links}) {
     )
     console.log(mappedLinks)
   return (
-    <header className="w-ful h-[6rem] flex justify-between p-2 pl-10 pr-10 border-2 border-black bg-white">
-      <div className="leftNavbar flex h-full items-center">
-        <img src = "./ramen-bowl.svg" className="h-full"></img>
-        <Link to = "/"><h2>RECIPIES</h2></Link>
-      </div>
-      <div className="rightNavbar flex h-full  items-center gap-2">
-        {mappedLinks}
-        {/* <Link></Link> */}
-      </div>
+    <header className="w-full h-[6rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-white">
+      <nav
+        className="flex justify-between items-center w-full "
+        aria-label="Main"
+      >
+        <div className="leftNavbar flex h-full items-center ">
+          <img src="./ramen-bowl.svg" className="h-full"></img>
+          <Link to="/">
+            <h2>RECIPIES</h2>
+          </Link>
+        </div>
+        <div className="rightNavbar flex h-full  items-center gap-2">
+          {mappedLinks}
+        </div>
+      </nav>
     </header>
   );
 }
+
