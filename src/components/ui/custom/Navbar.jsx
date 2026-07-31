@@ -8,7 +8,7 @@ export default function Navbar({links}) {
     const mappedLinks = links.map(
         (l)=> <Link key= {l.text} to = {l.href}><Button className="h-12">{l.text}</Button></Link>
     )
-    console.log(mappedLinks)
+
   return (
     <header className="w-full h-[5rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-[#ffffff] sticky top-0">
       <nav

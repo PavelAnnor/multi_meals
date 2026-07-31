@@ -17,23 +17,27 @@ import Search from "./pages/Search.jsx";
 //Data imports
 import { navbarLinks } from "./data/navbarLinks.js";
 
+//Context Imports
+import {RecipeContext} from "./context/RecipeContext.js";
+
 
 
 //Other Imports
 import fetchData from "./util/api.js"
 
 
-
-await fetchData();
 export default function App() {
 
  
 
+const[recipes,setRecipes] = useState([])
 
 
 
 return (
-  <>
+
+  
+  <RecipeContext.Provider value = {{recipes,setRecipes}}>
     <Navbar links={navbarLinks}></Navbar>
     <Routes>
       <Route
@@ -46,9 +50,9 @@ return (
           ></Home>
         }
       ></Route>
-      <Route path="/search-recipes" element = {<Search></Search>}></Route>
+      <Route path="/search-recipes" element={<Search></Search>}></Route>
     </Routes>
-  </>
+  </RecipeContext.Provider>
 );
   
 }

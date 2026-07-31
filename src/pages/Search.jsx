@@ -1,5 +1,7 @@
 import { MainAndSubTextSection } from "../components/ui/custom/MainAndSubTextSection";
 import SearchBar from "../components/ui/custom/Searchbar";
+import FoodCardItem from "../components/ui/custom/FoodCardItem";
+import FoodCardItemGrid from "../components/ui/custom/FoodCardItemGrid";
 
 export default function Search(){
 
@@ -13,6 +15,9 @@ export default function Search(){
           margin={4}
         ></MainAndSubTextSection>
         <SearchBar></SearchBar>
+      <FoodCardItemGrid>
+        <FoodCardItem></FoodCardItem>
+      </FoodCardItemGrid>
       </main>
     );
 }
