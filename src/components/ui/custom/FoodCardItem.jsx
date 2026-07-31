@@ -1,12 +1,59 @@
-export default function FoodCardItem(){
+import {Link } from "react-router"
+import {useRef} from "react"
+export default function FoodCardItem({image,name,country,video,ingredients}){
+
+    console.log(ingredients)
+
+   const imageRef = useRef()
+   const subCardRef = useRef()
+
+    function handleMouseEnter() {
+      subCardRef.current.classList.add("h-full");
+    }
+
+    function handleMouseLeave() {
+      subCardRef.current.classList.remove("h-full");
+    }
+
+
+   
 
     return (
-      <article className="w-[100%] aspect-[4/5] border border-gray-900 bg-white flex flex-col ">
-        <img
-          src="https://www.themealdb.com/images/media/meals/lwsnkl1604181187.jpg"
-          className="w-9/10 aspect-square border bg-pink-500 rounded-4xl ml-auto mr-auto"
-        ></img>
-        <h1>Text</h1>
+      <article className="w-[100%] border-[#eae9e9] border bg-white flex flex-col p-4 rounded-3xl">
+        <div className="flex relative">
+          <img
+            ref={imageRef}
+            src={image}
+            className="w-full aspect-square border rounded-4xl ml-auto mr-auto border border-[#505050]"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          ></img>
+          <div ref={subCardRef} className="h-0 w-full absolute top-0 left-0  bg-[#f3f0f079] rounded-4xl overflow-scroll">
+            <Ingredients ingredients={ingredients}></Ingredients>
+          </div>
+          
+        </div>
+
+        <p className="p-2 border mt-2 "> {name}</p>
+        <p className="p-2 border mt-2">Country: {country}</p>
+        <Link to={video} target="_blank">
+          <p className="p-2 border mt-2">Video Recipe</p>
+        </Link>
+        <Link to="/" target="_blank">
+          <p className="p-2 border mt-2">Detailed Recipe</p>
+        </Link>
       </article>
     );
 }
+
+
+function Ingredients({ingredients}){
+
+    return ingredients.map((i) => (
+      <p className="p-1  h-[10%] w-full text-center">{i}</p>
+    ));
+
+
+
+}
+

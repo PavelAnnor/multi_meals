@@ -10,7 +10,7 @@ export default function Navbar({links}) {
     )
 
   return (
-    <header className="w-full h-[5rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-[#ffffff] sticky top-0">
+    <header className="w-full h-[5rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-[#ffffff] sticky top-0 z-50">
       <nav
         className="flex justify-between items-center w-full "
         aria-label="Main"

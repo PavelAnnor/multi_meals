@@ -15,7 +15,6 @@ export default function SearchBar(){
 
     async function handleSearch(e){
         e.preventDefault()
-        console.log(searchBarRef.current.value)
         const x =  await fetchData(searchBarRef.current.value)
         setRecipes(x.meals)
     }
