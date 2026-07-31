@@ -131,6 +131,7 @@
 
 body{
   background-color: aliceblue;
+  
 }
 
 
@@ -142,4 +143,15 @@ body{
   
   font-weight: 900;
   font-style: normal;
+}
+
+
+.fadeImgageLeft{
+  -webkit-mask-image: linear-gradient(to left ,black, rgba(255, 0, 0, 0.043));
+  mask-image: linear-gradient(to left,black,rgba(255, 255, 255, 0.078));
+}
+
+.fadeImgageRight{
+  -webkit-mask-image: linear-gradient(to right, black, rgba(255, 0, 0, 0.043));
+  mask-image: linear-gradient(to right, black, rgba(255, 255, 255, 0.192));
 }

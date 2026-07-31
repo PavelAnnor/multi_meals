@@ -10,7 +10,7 @@ export default function ImageDelimiter({num, delimiterImgSrc}){
     }
 
     return (
-      <div className="flex border-amber-300 border-4 h-11  ml-auto mr-auto justify-evenly gap-5">
+      <div className="flex border-amber-300 border h-11  ml-auto mr-auto justify-evenly gap-5 ">
        {images}
       </div>
     );

@@ -1,19 +1,27 @@
 
 import { MainAndSubTextSection } from "../components/ui/custom/MainAndSubTextSection";
 import ImageDelimiter from "../components/ui/custom/ImageDelimiter";
+import ImgageSlider from "../components/ui/custom/ImageSlider";
 
 export default function Home({mainText,subText, delimiterImgSrc}){
 
 
     return (
-      <main className="border-red-400 border-4 w-95/100 m-auto mt-10 rounded-4xl flex flex-col ">
+      <main className="border-gray-300  border-1 w-90/100 m-auto mt-10 mb-0 rounded-4xl flex flex-col bg-[#ffffff] pt-10 items-center">
+        {/* <ImageDelimiter
+          delimiterImgSrc={delimiterImgSrc}
+          num={3}
+        ></ImageDelimiter> */}
+        <img
+          className="w-[10%] aspect-square  border-amber-800"
+          src="fork.png"
+        ></img>
         <MainAndSubTextSection
           mainText={mainText}
           subText={subText}
         ></MainAndSubTextSection>
-        <ImageDelimiter delimiterImgSrc={delimiterImgSrc} num={3}></ImageDelimiter>
 
-    
+        <img src="./burger.png" className=" border-red-900 w-9/10"></img>
       </main>
     );
 }

@@ -10,7 +10,7 @@ export default function Navbar({links}) {
     )
     console.log(mappedLinks)
   return (
-    <header className="w-full h-[6rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-white">
+    <header className="w-full h-[5rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-[#ffffff] sticky top-0">
       <nav
         className="flex justify-between items-center w-full "
         aria-label="Main"
