@@ -15,12 +15,13 @@ export default function Navbar({links}) {
         className="flex justify-between items-center w-full "
         aria-label="Main"
       >
-        <div className="leftNavbar flex h-full items-center ">
-          <img src="./ramen-bowl.svg" className="h-full"></img>
-          <Link to="/">
+        <Link to="/" className="h-full">
+          <div className="leftNavbar flex h-full items-center ">
+            <img src="./ramen-bowl.svg" className="h-full"></img>
+
             <h2>RECIPIES</h2>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className="rightNavbar flex h-full  items-center gap-2">
           {mappedLinks}
         </div>

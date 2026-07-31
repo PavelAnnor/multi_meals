@@ -8,14 +8,14 @@ export default function Home({mainText,subText, delimiterImgSrc}){
 
     return (
       <main className="border-gray-300  border-1 w-90/100 m-auto mt-10 mb-0 rounded-4xl flex flex-col bg-[#ffffff] pt-10 items-center">
-        {/* <ImageDelimiter
+        <ImageDelimiter
           delimiterImgSrc={delimiterImgSrc}
           num={3}
-        ></ImageDelimiter> */}
-        <img
-          className="w-[10%] aspect-square  border-amber-800"
+        ></ImageDelimiter>
+        {/* <img
+          className="w-[7%] aspect-square  border-amber-800"
           src="fork.png"
-        ></img>
+        ></img> */}
         <MainAndSubTextSection
           mainText={mainText}
           subText={subText}
