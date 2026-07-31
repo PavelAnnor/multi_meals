@@ -13,3 +13,18 @@ export function pullOutIngredients(ing){
 
 
 }
+
+
+
+export function pullOutIngredientAmounts(ing){
+
+     const x = [];
+     for (let i in ing) {
+       if (i.includes("strMeasure") && ing[i]) x.push(ing[i]);
+     }
+
+     return x;
+
+}
+
+

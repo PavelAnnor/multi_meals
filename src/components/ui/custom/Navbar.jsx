@@ -5,9 +5,11 @@ import { Link } from "react-router";
 
 export default function Navbar({links}) {
 
-    const mappedLinks = links.map(
-        (l)=> <Link key= {l.text} to = {l.href}><Button className="h-12">{l.text}</Button></Link>
-    )
+    const mappedLinks = links.map((l) => (
+      <Link key={l.text} to={l.href} target={l.href.includes("https")? "_blank":""}>
+        <Button className="h-12">{l.text}</Button>
+      </Link>
+    ));
 
   return (
     <header className="w-full h-[5rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-[#ffffff] sticky top-0 z-50">

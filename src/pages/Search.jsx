@@ -34,6 +34,7 @@ export default function Search(){
                 country={r.strCountry}
                 video={r.strYoutube}
                 ingredients = {pullOutIngredients(r)}
+                idMeal={r.idMeal}
               ></FoodCardItem>
             ))}
         </FoodCardItemGrid>

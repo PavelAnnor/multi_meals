@@ -22,6 +22,8 @@ export default function Home({mainText,subText, delimiterImgSrc}){
         ></MainAndSubTextSection>
 
         <img src="./burger2.png" className=" border-red-900 w-9/10"></img>
+
+       
       </main>
     );
 }

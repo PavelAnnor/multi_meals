@@ -2,7 +2,7 @@ import { Button } from "../button.jsx"
 import { Search } from "lucide-react";
 import { useContext,useRef } from "react";
 import { RecipeContext } from "../../../context/RecipeContext.js";
-import fetchData from "../../../util/api.js";
+import {getMeals} from "../../../util/api.js";
 
 export default function SearchBar(){
 
@@ -15,7 +15,7 @@ export default function SearchBar(){
 
     async function handleSearch(e){
         e.preventDefault()
-        const x =  await fetchData(searchBarRef.current.value)
+        const x =  await getMeals(searchBarRef.current.value)
         setRecipes(x.meals)
     }
 
