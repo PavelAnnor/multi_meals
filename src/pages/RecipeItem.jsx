@@ -29,7 +29,7 @@ export default function RecipeItem(){
   
 
     return (
-      <main className="w-8/10 border border-red-600 m-auto p-2 mt-6 ">
+      <main className="w-85/100  border-red-600 m-auto p-2 mt-6 ">
         <RecipeItemHeader
           image={meal.strMealThumb}
           name={meal.strMeal}

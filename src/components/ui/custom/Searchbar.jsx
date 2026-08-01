@@ -35,8 +35,9 @@ export default function SearchBar(){
         <Button
           type="button"
           size="lg"
-          className="mt-6 h-13"
+          className="mt-6 h-13 "
           onClick={handleSearch}
+        
         >
           Search for Recipe
         </Button>
