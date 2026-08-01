@@ -39,7 +39,7 @@ export default function SearchBar(){
           onClick={handleSearch}
         
         >
-          Search for Recipe
+          Begin Search
         </Button>
       </form>
 

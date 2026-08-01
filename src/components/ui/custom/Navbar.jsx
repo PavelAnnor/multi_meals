@@ -6,16 +6,17 @@ import { Link } from "react-router";
 export default function Navbar({links}) {
 
     const mappedLinks = links.map((l) =>
-
       //the random recipe button should trigger a reload everytime its clicked so a new api fetch request can be made
       l.text === "Random Recipe" ? (
         <Link
           key={l.text}
           to={l.href}
           target={l.href.includes("https") ? "_blank" : ""}
-          reloadDocument = {true}
+          reloadDocument={true}
         >
-          <Button className="h-12 bg-[#F7F7F7] text-black">{l.text}</Button>
+          <Button className="h-12 bg-[#F7F7F7] text-black hover:bg-[#804e79]">
+            {l.text}
+          </Button>
         </Link>
       ) : (
         <Link
@@ -23,9 +24,11 @@ export default function Navbar({links}) {
           to={l.href}
           target={l.href.includes("https") ? "_blank" : ""}
         >
-          <Button className="h-12 bg-[#F7F7F7] text-black">{l.text}</Button>
+          <Button className="h-12 bg-[#F7F7F7] text-black hover:bg-[#a15095]">
+            {l.text}
+          </Button>
         </Link>
-      )
+      ),
     );
 
   return (

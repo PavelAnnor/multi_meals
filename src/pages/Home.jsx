@@ -18,7 +18,7 @@ export default function Home({mainText,subText, delimiterImgSrc}){
           subText={subText}
         ></MainAndSubTextSection>
 
-        <img src="./burger2.png" className=" border-red-900 w-9/10"></img>
+        <img src="./burger.png" className=" border-red-900 w-9/10"></img>
 
        
       </main>

@@ -19,8 +19,8 @@ export default function Search(){
     return (
       <main>
         <MainAndSubTextSection
-          subText="And Filter by Time, Ingredients, Country etc."
-          mainText="Search for Recipies"
+          subText=""
+          mainText="Search for Recipes"
           margin={4}
         ></MainAndSubTextSection>
         <SearchBar></SearchBar>
