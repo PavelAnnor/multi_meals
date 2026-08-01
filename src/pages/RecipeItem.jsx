@@ -1,7 +1,7 @@
 import { useParams } from "react-router"
 import {useState, useContext,useEffect} from "react"
-import { RecipeContext } from "../context/RecipeContext";
-import { Spinner } from "@/components/ui/spinner";
+import { RecipeContext } from "../context/RecipeContext.js";
+import { Spinner } from "@/components/ui/spinner.jsx";
 
 import {getMealByID} from "../util/api.js"
 

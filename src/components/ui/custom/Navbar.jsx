@@ -1,4 +1,4 @@
-import { Button } from "../button";
+import { Button } from "../button.jsx";
 import "../../../styles/Navbar.css";
 
 import { Link } from "react-router";
@@ -6,6 +6,8 @@ import { Link } from "react-router";
 export default function Navbar({links}) {
 
     const mappedLinks = links.map((l) =>
+
+      //the random recipe button should trigger a reload everytime its clicked so a new api fetch request can be made
       l.text === "Random Recipe" ? (
         <Link
           key={l.text}

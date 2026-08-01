@@ -1,7 +1,7 @@
 
-import { MainAndSubTextSection } from "../components/ui/custom/MainAndSubTextSection";
-import ImageDelimiter from "../components/ui/custom/ImageDelimiter";
-import ImgageSlider from "../components/ui/custom/ImageSlider";
+import { MainAndSubTextSection } from "../components/ui/custom/MainAndSubTextSection.jsx";
+import ImageDelimiter from "../components/ui/custom/ImageDelimiter.jsx";
+import ImgageSlider from "../components/ui/custom/ImageSlider.jsx";
 
 export default function Home({mainText,subText, delimiterImgSrc}){
 

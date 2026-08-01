@@ -1,7 +1,7 @@
-import { MainAndSubTextSection } from "../components/ui/custom/MainAndSubTextSection";
-import SearchBar from "../components/ui/custom/Searchbar";
-import FoodCardItem from "../components/ui/custom/FoodCardItem";
-import FoodCardItemGrid from "../components/ui/custom/FoodCardItemGrid";
+import { MainAndSubTextSection } from "../components/ui/custom/MainAndSubTextSection.jsx";
+import SearchBar from "../components/ui/custom/Searchbar.jsx";
+import FoodCardItem from "../components/ui/custom/FoodCardItem.jsx";
+import FoodCardItemGrid from "../components/ui/custom/FoodCardItemGrid.jsx";
 import { useContext } from "react";
 import { RecipeContext } from "../context/RecipeContext.js"
 

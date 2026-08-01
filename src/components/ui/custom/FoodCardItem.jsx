@@ -1,6 +1,6 @@
 import {Link } from "react-router"
 import {useRef} from "react"
-import { Button } from "../button"
+import { Button } from "../button.jsx"
 export default function FoodCardItem({idMeal,image,name,country,video,ingredients}){
 
 
