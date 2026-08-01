@@ -43,21 +43,18 @@ export default function RecipeRandom(){
 
 
 
-    return(
-
-         <main className="w-85/100  border-red-600 m-auto p-2 mt-6 ">
-           <RecipeItemHeader
-                         image={meal.strMealThumb}
-                         name={meal.strMeal}
-                         category={meal.strCategory}
-                       ></RecipeItemHeader>
-                       <RecipeItemIngredients
-                         ingredients={pullOutIngredients(meal)}
-                       ></RecipeItemIngredients>
-                       <RecipeItemSteps steps={meal.strInstructions}></RecipeItemSteps>
-         </main>
-
-
-        
-    )
+    return (
+      <main className="w-85/100  border-red-600 m-auto p-2 mt-6 ">
+        <RecipeItemHeader
+          image={meal.strMealThumb}
+          name={meal.strMeal}
+          category={meal.strCategory}
+        ></RecipeItemHeader>
+        <RecipeItemIngredients
+          ingredients={pullOutIngredients(meal)}
+          amounts={pullOutIngredientAmounts(meal)}
+        ></RecipeItemIngredients>
+        <RecipeItemSteps steps={meal.strInstructions}></RecipeItemSteps>
+      </main>
+    );
 }

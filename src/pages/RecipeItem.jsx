@@ -52,6 +52,7 @@ export default function RecipeItem(){
             ></RecipeItemHeader>
             <RecipeItemIngredients
               ingredients={pullOutIngredients(meal)}
+              amounts = {pullOutIngredientAmounts(meal)}
             ></RecipeItemIngredients>
             <RecipeItemSteps steps={meal.strInstructions}></RecipeItemSteps>
           </>
