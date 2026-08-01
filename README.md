@@ -10,7 +10,10 @@ An React front end application that is used to search for recipes, their corresp
 🔧 Technology React.JS, Shadnc, Tailwind CSS, Lucide React
 
 💡 Notes N/A
-Deployed on Netlify @: 
+Deployed on Netlify @: https://multi-meals.onrender.com/
 
 🔗 References N/A
 Original API: https://www.themealdb.com/api.php
+
+Blockers
+Issues with creating unique keys while mapping within the Ingredients component in FoodCardItem.jsx
