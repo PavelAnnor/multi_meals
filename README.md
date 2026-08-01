@@ -7,7 +7,7 @@ Date: 07/12/26
 An React front end application that is used to search for recipes, their corresponding ingredients and instructions
 
 
-🔧 Technology React.JS, Shadnc, Tailwind CSS
+🔧 Technology React.JS, Shadnc, Tailwind CSS, Lucide React
 
 💡 Notes N/A
 Deployed on Netlify @: 
