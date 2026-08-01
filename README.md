@@ -1,16 +1,16 @@
-# React + Vite
+SBA 320 - React Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Date: 07/12/26
 
-Currently, two official plugins are available:
+📋 Description: Frontend project created for Per Scholas Software Engineering Track intended to show profiency with React.JS and its various hooks and modules.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+An React front end application that is used to search for recipes, their corresponding ingredients and instructions
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔧 Technology React.JS, Shadnc, Tailwind CSS
 
-## Expanding the Oxlint configuration
+💡 Notes N/A
+Deployed on Netlify @: 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+🔗 References N/A
+Original API: https://www.themealdb.com/api.php
