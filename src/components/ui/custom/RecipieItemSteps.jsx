@@ -1,7 +1,7 @@
 
 export default function RecipeItemSteps({steps}){
 
-    console.log(steps)
+  
 
     return (
       <section className="border-blue-400 w-full mt-10">

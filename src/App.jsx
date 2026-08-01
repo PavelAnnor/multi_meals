@@ -13,6 +13,7 @@ import Navbar from "./components/ui/custom/Navbar.jsx";
 import Home from "./pages/Home.jsx"
 import Search from "./pages/Search.jsx";
 import RecipeItem from "./pages/RecipeItem.jsx";
+import RecipeRandom from "./pages/RecipeRandom.jsx"
 
 
 //Data imports
@@ -51,7 +52,14 @@ return (
           }
         ></Route>
         <Route path="/search-recipes" element={<Search></Search>}></Route>
-        <Route path="/recipe/:idMeal" element={<RecipeItem></RecipeItem>}></Route>
+        <Route
+          path="/recipe/:idMeal"
+          element={<RecipeItem></RecipeItem>}
+        ></Route>
+        <Route
+          path="/recipe/random"
+          element={<RecipeRandom></RecipeRandom>}
+        ></Route>
       </Routes>
     </RecipeContext.Provider>
   </>

@@ -16,7 +16,7 @@ export default function Navbar({links}) {
     ));
 
   return (
-    <header className="w-full h-[5rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-[#AD8DCE] sticky top-0 z-50">
+    <header className="w-full h-[5rem] flex  p-2 pl-10 pr-10 border-2 border-black bg-[#AD8DCE] ">
       <nav
         className="flex justify-between items-center w-full "
         aria-label="Main"
@@ -25,7 +25,7 @@ export default function Navbar({links}) {
           <div className="leftNavbar flex h-full items-center ">
             <img src="/ramen-bowl.svg" className="h-full"></img>
 
-            <h2>RECIPIES</h2>
+            <h2 className="text-3xl text-[#f7ebd8]">MULTI-MEAL</h2>
           </div>
         </Link>
         <div className="rightNavbar flex h-full  items-center gap-2">

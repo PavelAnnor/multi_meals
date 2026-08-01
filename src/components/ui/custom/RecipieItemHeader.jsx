@@ -11,7 +11,7 @@ export default function RecipeItemHeader({image,name,category}){
         ></img>
         <div className=" border-black  w-full ml-4">
           <h2 className="text-7xl  mb-2 p-2">{name}</h2>
-          <p className="text-3xl text-gray-600 p-2">{category}</p>
+          <p className="text-3xl text-gray-600 p-2 pl-3">{category}</p>
         </div>
       </section>
     );
