@@ -1,6 +1,5 @@
 
-
-
+//function that gets recipes as long as they have the specifed keyword in the recipe name or list of ingredients
 async function getMeals(food) {
   try {
     const response = await fetch(
@@ -13,6 +12,7 @@ async function getMeals(food) {
   }
 }
 
+//function that gets one random recipe
 async function getRandomMeal() {
   try {
     const response = await fetch(
@@ -25,6 +25,7 @@ async function getRandomMeal() {
   }
 }
 
+//function that gets a recipe my ID
 async function getMealByID(id) {
   try {
     const response = await fetch(

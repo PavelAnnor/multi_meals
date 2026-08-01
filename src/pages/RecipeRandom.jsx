@@ -24,7 +24,6 @@ export default function RecipeRandom(){
 
             try {
                 const x = await getRandomMeal()
-                console.log(x)
                 setMeal(x.meals[0])
                 
             } catch (error) {
