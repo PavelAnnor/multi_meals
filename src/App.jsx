@@ -45,7 +45,7 @@ return (
           element={
             <Home
               mainText="Explore Countless Recipes"
-              subText="Hundreds of Recipies all with ingredients, detailed instructions and more"
+              subText="With Listed Ingredients, Detailed Instructions, and More"
               delimiterImgSrc="./fork.png"
             ></Home>
           }

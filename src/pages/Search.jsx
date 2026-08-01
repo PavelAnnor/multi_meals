@@ -24,9 +24,9 @@ export default function Search(){
           margin={4}
         ></MainAndSubTextSection>
         <SearchBar></SearchBar>
+        {recipes &&
         <FoodCardItemGrid>
-          {recipes &&
-            recipes.map((r) => (
+            {recipes.map((r) => (
               <FoodCardItem
                 key={r.idMeal}
                 image={r.strMealThumb}
@@ -38,6 +38,8 @@ export default function Search(){
               ></FoodCardItem>
             ))}
         </FoodCardItemGrid>
+        }
+        {!recipes && <h1 className="text-5xl text-center mt-10">No Results found... </h1>}
       </main>
     );
 }

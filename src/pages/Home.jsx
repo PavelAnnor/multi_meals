@@ -12,10 +12,7 @@ export default function Home({mainText,subText, delimiterImgSrc}){
           delimiterImgSrc={delimiterImgSrc}
           num={3}
         ></ImageDelimiter>
-        {/* <img
-          className="w-[7%] aspect-square  border-amber-800"
-          src="fork.png"
-        ></img> */}
+        
         <MainAndSubTextSection
           mainText={mainText}
           subText={subText}

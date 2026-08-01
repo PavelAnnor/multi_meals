@@ -8,6 +8,7 @@ import { pullOutIngredientAmounts,pullOutIngredients } from "../util/util.js";
 
 import RecipeItemHeader from "../components/ui/custom/RecipieItemHeader.jsx"
 import RecipeItemIngredients from "../components/ui/custom/RecipeItemIngredients.jsx";
+import RecipeItemSteps from "../components/ui/custom/RecipieItemSteps.jsx";
 
 
 
@@ -34,7 +35,10 @@ export default function RecipeItem(){
           name={meal.strMeal}
           category={meal.strCategory}
         ></RecipeItemHeader>
-        <RecipeItemIngredients ingredients = {pullOutIngredients(meal)}></RecipeItemIngredients>
+        <RecipeItemIngredients
+          ingredients={pullOutIngredients(meal)}
+        ></RecipeItemIngredients>
+        <RecipeItemSteps steps={meal.strInstructions}></RecipeItemSteps>
       </main>
     );
 }

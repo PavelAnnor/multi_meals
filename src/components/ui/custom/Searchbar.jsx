@@ -24,10 +24,10 @@ export default function SearchBar(){
       
       <form className=" text-center w-[50%] m-auto" >
         <div className="flex h-15 border border-black  rounded-4xl pl-2 m-auto">
-          <Search className="h-full"></Search>
+          <Search className="h-full w-[6%] "></Search>
           <input
             type="text"
-            className="h-full w-full rounded-4xl pl-3 outline-0 border-l-0"
+            className="h-full w-full rounded-r-4xl pl-3 outline-0 border-l-0 bg-white"
             ref = {searchBarRef}
           ></input>
         </div>
