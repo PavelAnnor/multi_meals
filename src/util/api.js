@@ -1,3 +1,6 @@
+
+
+
 async function getMeals(food) {
   try {
     const response = await fetch(
